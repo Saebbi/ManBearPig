@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.isModLoaded">
+				<modName>Combat Extended</modName>
+				<yourMod>ManBearPig for Rimworld</yourMod>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ManBearPig"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Humanoid</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ManBearPig"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left fist</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>35</power>
+						<cooldownTime>1.95</cooldownTime>
+						<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+						<surpriseAttack>
+						  <extraMeleeDamages>
+							<li>
+							  <def>Stun</def>
+							  <amount>35</amount>
+							</li>
+						  </extraMeleeDamages>
+						</surpriseAttack>
+						<armorPenetration>0.28</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right paw</label>
+						<capacities>
+						  <li>Slash</li>
+						</capacities>
+						<power>55</power>
+						<cooldownTime>2.2</cooldownTime>
+						<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+						<surpriseAttack>
+						  <extraMeleeDamages>
+							<li>
+							  <def>Stun</def>
+							  <amount>50</amount>
+							</li>
+						  </extraMeleeDamages>
+						</surpriseAttack>
+						<armorPenetration>0.64</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>bite</label>
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>65</power>
+						<cooldownTime>2.9</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<surpriseAttack>
+						  <extraMeleeDamages>
+							<li>
+							  <def>Stun</def>
+							  <amount>45</amount>
+							</li>
+						  </extraMeleeDamages>
+						</surpriseAttack>
+						<armorPenetration>0.93</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>28</power>
+						<cooldownTime>3.4</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.93</armorPenetration>
+						<commonality>0.05</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- This file is an announcer document. It's sole purpose is to produce the required detection messages. -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.isModLoaded">
+				<modName>Combat Extended</modName>
+				<yourMod>ManBearPig for Rimworld</yourMod>
+				<customMessageSuccess>ManBearPig :: Combat Extended found: RUN! I'm super duper serial!</customMessageSuccess>
+			</li>
+			
+			<li Class="ModCheck.loadOrder">
+				<modName>Combat Extended</modName>
+				<yourMod>ManBearPig for Rimworld</yourMod>
+				<errorOnFail>true</errorOnFail>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
