@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="GR_GeneticsBase">
+    <defName>GR_PigGenetic</defName>
+    <label>Pig genetic material</label>
+    <description>A vial of genetic material extracted from a Pig.</description>
+    
+    <graphicData>
+      <color>(200,130,200)</color>
+    </graphicData>
+    
+  </ThingDef>
+  
+</Defs>

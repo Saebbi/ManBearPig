@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Eldritch Incubators -->
+
+
+
+	<RecipeDef>
+		<defName>GR_CreateManBearPigIncubator</defName>
+		<label>ManBearPig bear incubator</label>
+		<description>Fill an incubator with genes from a bear and a ManBearPig</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+
+			<li>GR_EldritchGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_PigGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_HumanoidGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>GR_EmptyIncubator</li>
+				<li>GR_BearGenetic</li>
+				<li>GR_PigGenetic</li>
+				<li>GR_HumanoidGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_ManBearPigIncubator>1</GR_ManBearPigIncubator>
+		</products>
+		<researchPrerequisite>GR_HumanoidGeneticEngineering</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+</Defs>

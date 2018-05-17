@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+
+	<RecipeDef>
+		<defName>GR_ExtractGenesPig</defName>
+		<label>extract genes from a pig</label>
+		<description>Extract genetic material from a pig corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>Pig_Corpse</li>
+						<li>WildBoar_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Pig_Corpse</li>
+				<li>WildBoar_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_PigGenetic>1</GR_PigGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+  
+ 
+
+
+  
+</Defs>
