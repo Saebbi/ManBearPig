@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- =========================== Neutral ============================-->
+
+	<IncidentDef>
+		<defName>ManBearPig Sighting</defName>
+		<label>ManBearPig sighting</label>
+			<category>Misc</category>
+		<targetTypes>
+			<li>MapPlayerHome</li>
+		</targetTypes>
+		<workerClass>ManBearPig.IncidentWorker_MonsterSighting</workerClass>
+		<baseChance>0.45</baseChance>
+		<minRefireDays>13</minRefireDays>
+	</IncidentDef>
+	
+</Defs>
