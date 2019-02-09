@@ -71,7 +71,7 @@
         <power>28</power>
         <cooldownTime>3.4</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <commonality>0.05</commonality>
+        <chanceFactor>0.05</chanceFactor>
       </li>
     </tools>
     <race>
